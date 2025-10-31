@@ -1,71 +1,42 @@
-# Devolio
+# 🚀 Felipe Betancur: Real-Time Embedded & IoMusT Blog
 
-Devolio is a free portfolio and blog template to help you setup your personal website quickly.
+Este es el repositorio del blog profesional de **Oscar Felipe Betancur Lopera**, Ingeniero Electrónico interesado en **sistemas embebidos de alto rendimiento**, **optimización del Kernel de Linux** y desarrollo de **Internet de las Cosas Musicales (IoMusT)**.
 
-[Demo](https://devolio.devaradise.com) [Article](https://devaradise.com/devolio-astro-portfolio-blog-theme)
+El blog sirve como un portafolio de contenido técnico profundo, donde comparto guías, análisis de rendimiento y estudios de caso de mi trabajo en el campo de la electrónica y el software de baja latencia.
 
 ---
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/devaradise/devolio)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/devaradise/devolio)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/devaradise/devolio?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## 💡 Sobre el Contenido
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/netlify-templates/next-netlify-starter)
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fdevaradise%2Fdevolio)
+El contenido se enfoca en tres pilares principales:
 
-Features:
+* **Sistemas Embebidos y Mínima Latencia:** Desarrollo de *firmware* robusto, FreeRTOS y prototipado de *hardware*.
+* **Optimización del Kernel de Linux:** Diagnóstico de la carga de trabajo usando herramientas avanzadas como **`perf`** y **`eBPF`**.
+* **Tecnología Musical e Innovación:** Casos de estudio en IoMusT (como el proyecto patentado **Druman**) e ingeniería de audio en tiempo real.
+* **Rigor Técnico:** Artículos y recursos sobre **documentación científica y técnica en LaTeX** y creación de blogs profesionales con Astro.
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-- ✅ Post tags
-- ✅ Projects
-- ✅ Table of content
+---
 
-## 🚀 Project Structure
+## 🛠️ Stack Tecnológico
 
-Inside of your Astro project, you'll see the following folders and files:
+Este sitio fue construido con un enfoque en el rendimiento, la accesibilidad y la experiencia de desarrollo:
 
-```text
-├── public/
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-│   └── styles/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+* **Framework:** [Astro](https://astro.build/) (Para la velocidad y arquitectura *Islands*).
+* **Lenguaje:** TypeScript / JavaScript.
+* **Estilos:** Tailwind CSS (Para un desarrollo de estilos rápido y eficiente).
+* **Hosting:** Vercel / Netlify (Sugerido).
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Atribución a la Plantilla
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+Este proyecto comenzó utilizando **[Devolio](https://devolio.devaradise.com/)**, un *starter* minimalista para blogs de desarrolladores creado por **Devaradise**. Agradezco la estructura inicial que sirvió como base para la arquitectura del contenido. El *theme* y las funcionalidades han sido extensamente modificadas y adaptadas para reflejar la identidad visual y los requisitos específicos de rendimiento del blog.
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+---
 
-Any static assets, like images, can be placed in the `public/` directory.
+## 🖋️ Contribución
 
-## 🧞 Commands
+Si encuentras algún error o tienes sugerencias para mejorar el código o la documentación, ¡las contribuciones son bienvenidas! Por favor, abre un *issue* o un *pull request*.
 
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm run dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm run build`           | Build your production site to `./dist/`          |
-| `pnpm run preview`         | Preview your build locally, before deploying     |
-| `pnpm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [Astro documentation](https://docs.astro.build).
-
+**Autor:** **Felipe Betancur Lopera**
+* [LinkedIn]([www.linkedin.com/in/oscar-felipe-betancur-lopera])
+* [GitHub]([https://github.com/felipebetancur])
+* [Fiverr](https://www.fiverr.com/felipe_musdev)
