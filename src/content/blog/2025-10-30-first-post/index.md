@@ -70,3 +70,13 @@ Si te interesa éste tema te invito a explorar los próximos artículos.
 
 ---
 
+### 📚 Bibliografía y recursos recomendados
+
+- **Brendan Gregg — _perf Examples_**  
+    [https://www.brendangregg.com/perf.html](https://www.brendangregg.com/perf.html)  
+    
+- **eBPF Foundation — _What is eBPF?_**  
+    [https://ebpf.io/what-is-ebpf/](https://ebpf.io/what-is-ebpf/)  
+
+---
+
