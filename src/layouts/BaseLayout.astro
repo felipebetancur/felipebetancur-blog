@@ -10,16 +10,6 @@ const { title, description, image } = Astro.props;
 <html lang='en'>
 	<head>
 		<BaseHead title={title} description={description} image={image} />
-	</head>
-	<body
-		class="bg-theme-bg text-theme-text dark:bg-dark-bg dark:text-zinc-100"
-    background-color
-	>
-		<Header/>
-		<div class='py-8 min-h-[calc(100vh-160px)] pt-20'>
-			<slot />
-		</div>
-		<Footer />
 		<!-- Google tag (gtag.js) -->
     {
       PUBLIC_GA_ID && (
@@ -36,5 +26,15 @@ const { title, description, image } = Astro.props;
         </>
       )
     }
+	</head>
+	<body
+		class="bg-theme-bg text-theme-text dark:bg-dark-bg dark:text-zinc-100"
+    background-color
+	>
+		<Header/>
+		<div class='py-8 min-h-[calc(100vh-160px)] pt-20'>
+			<slot />
+		</div>
+		<Footer />
 	</body>
 </html>
