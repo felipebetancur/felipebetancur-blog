@@ -2,7 +2,7 @@
 import BaseHead from './components/BaseHead.astro';
 import Header from './components/Header.astro';
 import Footer from './components/Footer.astro';
-const PUBLIC_GA_ID = import.meta.env.PUBLIC_GA_ID;
+
 const { title, description, image } = Astro.props;
 ---
 
@@ -10,22 +10,6 @@ const { title, description, image } = Astro.props;
 <html lang='en'>
 	<head>
 		<BaseHead title={title} description={description} image={image} />
-		<!-- Google tag (gtag.js) -->
-    {
-      PUBLIC_GA_ID && (
-        <>
-          <script type="text/partytown" async src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GA_ID}`}></script>
-          <script type="text/partytown">
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', PUBLIC_GA_ID);
-          </script>
-        </>
-      )
-    }
 	</head>
 	<body
 		class="bg-theme-bg text-theme-text dark:bg-dark-bg dark:text-zinc-100"
