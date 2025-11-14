@@ -1,0 +1,50 @@
+---
+title: 'SystemToolsLab el laboratorio para herramientas open source'
+slug: 'second-post'
+description: ''
+tags: ["Linux", "eBPF", "Optimización", "Observabilidad", "Seguridad", "Open Source"]
+pubDate: '2025-11-13'
+coverImage: './blog-placeholder-1.png'
+---
+
+import { Image } from 'astro:assets';
+import teamviewerd from './teamviewerd.png';
+
+## Tutoriales en español e inglés sobre herramientas open source
+
+
+¡Hola de nuevo! Mi anterior post culminó señalando la forma en que **eBPF (Extended Berkeley Packet Filter)** nos permite extender las funcionalidades del kernel de Linux permitiendo escribir programas que se ejecutarán directamente en el espacio del kernel.
+
+La serie de artículos sobre eBPF que empecé a preparar dieron lugar a otro espacio más práctico en el cual presentaré tutoriales en español e inglés sobre diferentes herramientas **open source** útiles para trabajar como ingeniero electrónico o maker en sistemas Linux. Algunas herramientas son **KiCAD**, **FreeCAD**, **QEMU**, **KVM**, entre otras. El blog se llama <a href="https://system-tools-lab-blog.vercel.app/" target="_blank">**SystemToolsLab**</a> y este es mi primer artículo de una serie sobre <a href="https://system-tools-lab-blog.vercel.app/blog/aprendiendo_ebpf/" target="_blank"> **eBPF: "Aprendiendo eBPF para observabilidad, optimización y seguridad"** </a> que voy a presentar en la <a href="https://ebpf-summit-2025.devpost.com/" target="_blank">**eBPF Summit: Hackathon Edition 2025 Unleash the power of eBPF!**</a>
+
+
+### 🛠️ Una optimización inesperada
+
+Mientras desarrollaba los ejemplos para el primer artículo en SystemToolsLab, pude comprobar el poder de eBPF.
+
+Para la sección de demostración, utilicé la herramienta _one-liner_ **opensnoop-bpfcc** y luego mi propio código de ejemplo en Python, **open\_files.py**, diseñado para rastrear las llamadas al sistema de apertura de archivos. El objetivo era mostrar cómo se registran los procesos y archivos abiertos en tiempo real.
+
+Al correr estos scripts noté un proceso recurrente de Teamviewer, una aplicación que había olvidado que tenía instalada y estaba abriendo y cerrando constantemente archivos. Al rastrear el proceso, descubrí que corría un demonio teamviwerd que de manera silenciosa, estaba consumiendo recursos valiosos de memoria y además la aplicación estaba sin uso ocupando espacio en disco.
+
+<figure class="my-6">
+  <Image
+    src={teamviewerd}
+    alt="Demonio teamviewerd abriendo archivos"
+    width={900}
+    height={600}
+    class="rounded-lg"
+  />
+  <figcaption class="mt-2 text-sm text-center text-muted-foreground italic">
+    Demonio teamviewerd abriendo archivos constantemente.
+  </figcaption>
+</figure>
+
+Gracias a la visibilidad instantánea que me proporcionó eBPF, pude identificar y eliminar la aplicación, optimizando el rendimiento de mi sistema. Este pequeño incidente me confirmó de manera simple que: eBPF es una herramienta esencial para la **observabilidad, seguridad y optimización del rendimiento**.
+
+### ➡️ Próximo en felipebetancur-blog: La música y el IoT
+
+Con <a href="https://system-tools-lab-blog.vercel.app/" target="_blank">**SystemToolsLab**</a> centrado en herramientas _open source_,  el blog **felipebetancur** continuará explorando temas de ingeniería y tecnología más diversos.
+
+Mi próximo post aquí será una fascinante introducción al **Internet de las Cosas Musicales (IoT Musical)**. Exploraremos cómo los sistemas embebidos, la electrónica y las redes están creando una nueva generación de instrumentos, interfaces y experiencias sonoras.
+
+¡Los espero en ambos espacios!

@@ -30,7 +30,6 @@ Cuando realicé mi trabajo de grado en ingeniería electrónica, usé una herram
 
 > 💡 Consejo técnico: para obtener perfiles precisos, es fundamental compilar el código con _-fno-omit-frame-pointer_, de modo que las trazas de pila sean completas.
 
-
 ---
 
 ### 🔍 Ejemplos de uso de _perf_
@@ -55,7 +54,6 @@ En éste caso, estamos ejecutando _mi_programa_ mientras se almacena informació
 eBPF es una tecnología que permite ejecutar programas en el nivel privilegiado del kernel sin necesidad de agregar módulos ni cambiar el código fuente del núcleo. Para hacer una analogía, eBPF es al kernel algo similar a lo que es JavaScript para la web, permite extender las funcionalidades del núcleo de Línux. Los programas eBPF se controlan por eventos y se ejecutan cuando el kernel o una aplicación pasa por un determinado punto llamado _hook_ éstos puntos incluyen llamadas al sistema, todos los puntos donde se puede recoger información con **perf**, eventos de red y muchos más.
 
 Hoy perf se complementa y en algunos casos se integra con eBPF, una tecnología que permite ejecutar código seguro en el kernel de Linux, ideal para monitorización, _tracing_ y _profiling_ avanzado sin recompilar ni detener el sistema.
-
 
 ### 🚀 Lo que viene: tutoriales y ejemplos con _eBPF_
 

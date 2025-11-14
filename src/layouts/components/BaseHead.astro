@@ -45,19 +45,3 @@ const { title, description, image = '/syakir.webp' } = Astro.props;
 <meta property='twitter:description' content={description} />
 <meta property='twitter:image' content={new URL(image, Astro.url)} />
 
-<!-- Google tag (gtag.js) -->
-    {
-      PUBLIC_GTAG_MEASUREMENT_ID && (
-        <>
-          <script async src={`https://www.googletagmanager.com/gtag/js?id=${PUBLIC_GTAG_MEASUREMENT_ID}`}></script>
-          <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {
-              dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
-            gtag('config', PUBLIC_GTAG_MEASUREMENT_ID);
-          </script>
-        </>
-      )
-    }
